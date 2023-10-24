@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carttext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 760;
+}
+#nav-1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+    padding: 10px;
+}
+header{
+    background-image: url(./assets/kw-background.png);
+    width: 100%;
+    height: 465px;
+    background-size: cover;
+}
+#cartdiv{
+    display: flex;
+    align-items: center;
+}
+.bannertext{
+    color: white;
+    margin-left: 60px;
+    padding-top: 90px;
+}
+.bannertext h1{
+    font-size: 73px;
+    font-weight: 600;
+}
+.bannertext h5{
+    font-size: 20px;
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#books h2{
+    font-weight: 600;
+}
+.book{
+    height:265px;
+}
+.cardtext h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.author,.desc{
+    color: #8E8D8D;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.addtocart{
+    background-color: #6196FF;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.cartadd{
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+}
+.addtocartflex{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+}
+.cost{
+    font-weight: 900;
+    font-size: 18px;
+}
+#sliderbooks{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 30px;
+}
+.bookcard{
+    width: 191px;
+}
+#books{
+    padding: 40px;
+    padding-top: 130px;
+    margin-left: 40px;
+}
+.title{
+    padding: 10px;
+}
+.authordiv{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#Games,#HML{
+    padding: 40px;
+    padding-top: 130px;
+    margin-left: 40px;
+}
+#slidergames,#sliderHML{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.game{
+    height: 280px;
+}
+.gamecard,.HMLcard{
+    width: 300px;
+}
+footer{
+    background-color: black;    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    padding: 20px;
+}
+#profimg{
+    margin-left: 40px;
+}
+#footertext{
+    margin-right: 40px;
+    margin-top: 40px;
+}
