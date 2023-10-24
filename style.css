@@ -110,6 +110,7 @@ header{
 }
 .gamecard,.HMLcard{
     width: 300px;
+    padding-bottom: 50px;
 }
 footer{
     background-color: black;    
@@ -125,4 +126,119 @@ footer{
 #footertext{
     margin-right: 40px;
     margin-top: 40px;
+}
+
+@media (max-width: 1381px){
+    #sliderbooks{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .bookcard{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 1290px) {
+    #Games,#HML{
+        margin-left: 20px;
+    }
+    #slidergames,#sliderHML{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .bannertext{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 980px) {
+    #Games,#HML{
+        margin-left: 10px;
+    }
+    #slidergames,#sliderHML{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bannertext{
+        padding-top: 10px;
+    }
+    #sliderbooks{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .bookcard{
+        padding-bottom: 40px;
+    }
+    #nav-1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    #sliderbooks{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bookcard{
+        padding-bottom: 40px;
+    }
+    #Games,#HML{
+        margin-left: 20%;
+    }
+    #slidergames,#sliderHML{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 500px){
+    #books{
+        margin-left: 20%;
+    }
+    #sliderbooks{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bookcard{
+        padding-bottom: 40px;
+    }
+    #Games,#HML{
+        margin-left: 10%;
+    }
+    #slidergames,#sliderHML{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        font-size: 80%;
+    }
+    #profimg img{
+        height: 70px;
+    }
+
+}
+@media (max-width: 450px){
+    header{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 142px;
+    }
+    .bookcard{
+        padding-bottom: 40px;
+        width: 254px;
+    }
+    .book{
+        height: 350px;
+    }
+    #books{
+        text-align: center;
+        margin-left: 10%;
+        padding-top: 36px;
+    }
+    #Games,#HML{
+        margin-left: 6%;
+        text-align: center;
+    }
+    #bannertext{
+        padding-top: 10px;
+    }
+    .bannertext h1{
+        font-size: 21px
+    }
+    .bannertext h5{
+        font-size: 13px;
+    }
 }
