@@ -134,6 +134,12 @@ footer{
     background-color: #1f6aff;
 }
 
+#cartdiv:hover{
+    cursor: pointer;
+    background-color:  rgba(121, 121, 121, 0.311);
+    
+}
+
 
 @media (max-width: 1381px){
     #sliderbooks{
