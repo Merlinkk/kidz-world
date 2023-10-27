@@ -225,7 +225,7 @@ cross.onclick = () =>{
 
 // 
 
-var whatsappAPI = "https://api.whatsapp.com/send?phone=9190724XXXXX&text=";
+var whatsappAPI = "https://api.whatsapp.com/send?phone=9199999999&text=";
 const WB = document.getElementById('whatsappbutton')
 
 WB.onclick = () =>{
