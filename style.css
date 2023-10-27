@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -138,6 +139,80 @@ footer{
     cursor: pointer;
     background-color:  rgba(121, 121, 121, 0.311);
     
+}
+#popup{
+    background-color: rgba(0, 0, 0, 0.666);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left:2px;
+    position: fixed;
+    overflow: scroll;
+    /* display: flex; */
+    /* justify-content: center; */
+    border-radius: 10px;
+    /* align-items: center; */
+    box-shadow: 5px 5px 20px 10px gray ;
+}
+#cross{
+    border-radius: 100%;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: poppins;
+    background-color: black;
+    margin-right: 20px;
+}
+#crossdiv{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#cross:hover{
+    background-color: white;
+    color: green;
+    cursor: crosshair;
+}
+#blur{
+    position: relative;
+}
+.listItem{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.listItem img{
+    padding: 0px 10px;
+}
+#OrderList li{
+    margin-top: 10px;
+    list-style-type: none;
+    color: white;
+   /* background-color: white; */
+}
+#OrderList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 15%);
+}
+#costDisplay{
+    background-color: rgb(255 255 255 / 15%); 
+    padding: 10px;  
+}
+#costDiv{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 
