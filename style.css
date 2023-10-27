@@ -274,6 +274,12 @@ footer{
     }
 }
 
+@media (max-width: 650px){
+    #OrderList{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
 @media (max-width: 500px){
     #books{
         margin-left: 20%;
@@ -328,5 +334,11 @@ footer{
     }
     .bannertext h5{
         font-size: 13px;
+    }
+}
+
+@media (max-width:434px){
+    #OrderList{
+        grid-template-columns: 1fr;
     }
 }
