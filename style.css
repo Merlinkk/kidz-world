@@ -212,6 +212,7 @@ footer{
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -220,6 +221,21 @@ footer{
     background-color: rgb(255 255 255 / 15%);
     padding-left: 100px;
     padding-right: 100px;
+}
+#whatsapplink{
+    background-color: rgb(255 255 255 / 15%); 
+    padding: 10px;  
+}
+#whatsapplink:hover{
+    background-color: rgba(1, 255, 17, 0.173); 
+    cursor: pointer;
+}
+.whatsappbutton:hover{
+    cursor: pointer;
+}
+#costDiv img{
+    border-radius: 50%;
+    padding: 5px;
 }
 
 

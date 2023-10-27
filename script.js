@@ -139,6 +139,7 @@ var totalCost = 0
 const OrderList = document.getElementById('OrderList')
 const costH = document.getElementById('costDisplay')
 
+
 // list entry function
 function entry(elem){
     OrderList.innerHTML += `<li> <div class="listItem"> <img src="${elem.link}" height="90%"></div> <div class="cardtext">
@@ -154,9 +155,13 @@ function clearList(){
 
 function entryCost(dollar,cents){
     costH.innerHTML = `The total amount is $${dollar} and ${cents} cents.`
+    whatsappPrice+=`The total amount is $${dollar} and ${cents} cents.`
 }
 
 // cart eventlistner
+
+var whatsappOrder = ""
+var whatsappPrice = 0
 
 cartdiv.onclick = () =>{
     // for popup and blur
@@ -170,9 +175,12 @@ cartdiv.onclick = () =>{
     // 
     clearList()
     var itemsOrdered = ""
+    whatsappOrder = ""
     totalCost = 0
+    whatsappPrice = ""
     addToCartItems.forEach((elem)=>{
         itemsOrdered += `Item Name : ${elem.name} - Quantity: ${elem.quantity} \n`
+        whatsappOrder += `Item Name : ${elem.name} - Quantity: ${elem.quantity} \n` 
         totalCost+= elem.price * elem.quantity
         entry(elem)
         
@@ -217,3 +225,10 @@ cross.onclick = () =>{
 
 // 
 
+var whatsappAPI = "https://api.whatsapp.com/send?phone=9190724XXXXX&text=";
+const WB = document.getElementById('whatsappbutton')
+
+WB.onclick = () =>{
+    console.log(whatsappAPI + whatsappOrder + whatsappPrice, "_blank")
+    window.open(whatsappAPI + whatsappOrder + whatsappPrice, "_blank");
+}
